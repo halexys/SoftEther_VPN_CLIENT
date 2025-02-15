@@ -66,7 +66,6 @@ vpn_connect() {
     $CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountConnect $ACCOUNT_NAME
     sleep 5
     $CLIENT_DIR/vpncmd /CLIENT localhost /CMD AccountList
-    sudo dhclient vpn_$NIC_NAME
     sleep 2
 
     # Get the local gateway
